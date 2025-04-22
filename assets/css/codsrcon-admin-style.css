@@ -1,0 +1,410 @@
+#wrapper_codsrcon {
+    width: 1000px;
+    margin: auto;
+    padding: 0;
+}
+#wrapper_codsrcon h1 {
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    font-style: italic !important;
+    width: 100% !important;
+    color: #1d2327 !important; /* Dark gray for contrast */
+    border-left: 4px solid rgb(130, 130, 243) !important;
+    padding: 10px 15px !important;
+    margin: 30px 0 !important;
+    border-radius: 5px !important;
+    position: relative;
+}
+
+#wrapper_codsrcon h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px; /* Thickness of the bottom "border" */
+    background: linear-gradient(to right, rgb(130, 130, 243), transparent);
+    border-radius: 0 0 5px 5px; /* Match border-radius for smooth corners */
+}
+
+.codsrcon-server-list-container {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 1000px;
+    margin: 20px auto;
+    border-radius: 10px !important;
+    box-shadow: #000000 0px 0px 10px !important;
+    background-color: #ffffff !important;
+}
+
+#tables-container {
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.codsrcon-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2px;
+    border: 1px solid #000000 !important;
+    margin: 2px;
+    padding: 2px 2px 8px 2px;
+    overflow: hidden;
+    background-color: #585858 !important;
+}
+
+/* Styling the header */
+.codsrcon-server-list thead,
+.codsrcon-maps-table thead,
+.codsrcon-gts-table thead {
+    background-color: rgb(130, 130, 243) !important;
+}
+
+/* Styling even rows, skipping the first row */
+.codsrcon-server-list tbody tr:nth-child(even):not(:first-child),
+.codsrcon-maps-table tbody tr:nth-child(even):not(:first-child),
+.codsrcon-gts-table tbody tr:nth-child(even):not(:first-child) {
+    background-color: #e6e6e6 !important;
+}
+
+.codsrcon-server-list tbody tr:nth-child(odd),
+.codsrcon-maps-table tbody tr:nth-child(odd),
+.codsrcon-gts-table tbody tr:nth-child(odd) {
+    background-color: #fcfcfc !important;
+}
+
+.tables-side-by-side {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.table-wrapper {
+    width: 675px;
+}
+
+.server-management-container {
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.server-edit-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 16px !important;
+    padding: 0 !important;
+    gap: 20px;
+}
+
+.codsrcon-table tr td,
+.codsrcon-table tr th {
+    border: 1px solid #000000 !important;
+}
+
+.codsrcon-table th,
+.codsrcon-table td {
+    padding: 0px 8px !important;
+    color: #2b2b2b !important;
+}
+
+.codsrcon-server-list th {
+    font-weight: bold;
+}
+
+.codsrcon-server-list td:nth-child(1) {
+    width: 20px;
+}
+
+.codsrcon-server-list td:nth-child(2) {
+    width: 200px;
+}
+
+.codsrcon-server-list td:nth-child(3) {
+    width: 200px;
+}
+
+.codsrcon-server-list td:nth-child(4) {
+    width: 200px;
+}
+
+.codsrcon-server-list td:nth-child(5) {
+    width: 100px;
+}
+.codsrcon-server-list td:nth-child(6) {
+    width: 120px;
+}
+
+/* Maps Table */
+.codsrcon-maps-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.codsrcon-maps-table th {
+    font-weight: bold !important;
+}
+
+.codsrcon-maps-table td:nth-child(1) {
+    width: 200px !important;
+}
+
+.codsrcon-maps-table td:nth-child(2) {
+    width: 250px !important;
+}
+
+.codsrcon-maps-table td:nth-child(3) {
+    width: 40px !important;
+}
+
+/* Game Types Table */
+#server-gts-table {
+    width: 48%;
+}
+
+.codsrcon-gts-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.codsrcon-gts-table th {
+    font-weight: bold !important;
+}
+
+.codsrcon-gts-table td:nth-child(1) {
+    width: 30% !important;
+}
+
+.codsrcon-gts-table td:nth-child(2) {
+    width: 52% !important;
+}
+
+.codsrcon-gts-table td:nth-child(3) {
+    width: 18% !important;
+}
+
+/* Unified Button Styling */
+.codsrcon-button {
+    background: #0073aa;
+    border: 1px solid #0073aa;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: small;
+}
+
+.codsrcon-button:hover {
+    background-color: #007B9A;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Action Form */
+.codsrcon-action-form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Server Edit Container */
+#add-map-form-container2 {
+    width: 450px;
+    border: 2px solid #535353 !important;
+    border-radius: 5px !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    padding: 10px !important;
+    padding-left: 10px !important;
+    height: 424px;
+}
+
+#server-maps-gts-container {
+    width: 50%;
+}
+
+#add-map-form-container {
+    width: 520px;
+    margin: auto;
+    border: 2px solid #535353 !important;
+    border-radius: 5px !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    padding: 8px !important;
+    padding-left: 10px !important;
+}
+
+.server-edit-container .form-group {
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.server-edit-container .form-group label {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    font-weight: bold !important;
+    width: 30% !important;
+    text-align: left !important;
+}
+.server-edit-container .form-group input[type="text"],
+.server-edit-container .form-group input[type="number"],
+.server-edit-container .form-group input[type="password"] {
+    margin: 0 !important;
+    margin-bottom: 5px !important;
+    padding: 3px 5px !important;
+    width: 50% !important;
+    box-sizing: border-box !important;
+    min-height: 28px !important;
+    margin-left: 10px !important;
+}
+
+.server-edit-container form {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.server-edit-container form input,
+.server-edit-container form select,
+.server-edit-container form textarea {
+    margin: auto !important;
+    padding: 5px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.server-edit-container form input[type="text"],
+.server-edit-container form input[type="number"],
+.server-edit-container form input[type="password"],
+.server-edit-container form select,
+.server-edit-container form textarea {
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+}
+
+.server-edit-container form input[type="text"]:focus,
+.server-edit-container form input[type="number"]:focus,
+.server-edit-container form input[type="password"]:focus,
+.server-edit-container form select:focus,
+.server-edit-container form textarea:focus {
+    border-color: #0073aa !important;
+    box-shadow: 0 0 2px rgba(0, 115, 170, 0.8) !important;
+    outline: none !important;
+}
+
+/* Other Containers and Forms */
+form#server-form {
+    width: 100%;
+}
+
+/* Server Info Display */
+#server-info-display .server-info-container {
+    clear: both !important;
+    margin-top: 20px !important;
+}
+
+#server-info-display .server-info-row {
+    overflow: hidden !important;
+}
+
+#server-info-display .server-info-image {
+    width: 128px !important;
+    height: 128px !important;
+}
+
+#server-info-display .server-info-details table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+}
+
+#server-info-display .server-info-details th,
+#server-info-display .server-info-details td {
+    border: 2px solid #ddd !important;
+    text-align: left !important;
+    padding: 8px !important;
+}
+
+#server-info-display .server-info-details th {
+    background-color: #f2f2f2 !important;
+    font-weight: bold !important;
+}
+
+#server-info-display .server-info-details tr:nth-child(even) {
+    background-color: #f9f9f9 !important;
+}
+
+#server-info-display .server-info-details tr:hover {
+    background-color: #e0e0e0 !important;
+}
+
+/* File Upload */
+.file-upload-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.hidden-file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.file-upload-wrapper label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#file-name-display {
+    margin-left: 10px;
+    font-style: italic;
+    color: #bbbbbb;
+}
+
+.cod-server-shortcode-container {
+    margin: 20px 0;
+}
+
+.cod-server-shortcode-container select {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#cod-server-selector {
+    font-size: 12px !important;
+    width: 300px !important;
+    max-width: 300px !important;
+    min-width: 0 !important;
+    height: 100% !important;
+    border-radius: 5px 0 0 5px !important;
+    padding: 0 20px 0 5px !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"><path fill="gray" d="M0 0h10L5 5z"/></svg>') no-repeat right 5px center !important;
+    background-size: 10px 5px !important;
+    border: 1px solid #dcdcdc !important;
+    overflow: hidden !important;
+}
